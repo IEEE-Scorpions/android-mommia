@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Mommia</string>
+    <string name="continue_As">Continue As!</string>
+    <string name="nameTo">Tourist</string>
+    <string name="nameTG">Tour guide</string>
     <string name="Discover"> Discover the \nrich history and \ncultural heritage \nof Egypt</string>
 
 </resources>
