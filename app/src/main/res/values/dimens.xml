@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_value">16sp</dimen>
+    <dimen name="name_mommia">40sp</dimen>
+    <dimen name="top_name">124dp</dimen>
+    <dimen name="dotLoader">14dp</dimen>
+    <dimen name="txtSize">32sp</dimen>
+    <dimen name="marLift">24dp</dimen>
+    <dimen name="marTop">80dp</dimen>
+</resources>

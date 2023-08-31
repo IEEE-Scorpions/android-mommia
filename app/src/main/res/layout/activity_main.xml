@@ -4,15 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_margin="-50dp"
     tools:context=".MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.6" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textSize="@dimen/name_mommia"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/top_name"
+            />
 
-    <TextView
+    </LinearLayout>
+
+    <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+        android:id="@+id/dotsLoader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dotLoader"
+        app:loader_animDur="500"
+        app:loader_circleRadius="6dp"
+        app:loader_defaultColor="@color/black"
+        app:loader_dotsDist="3dp"
+        app:loader_expandOnSelect="false"
+        app:loader_firstShadowColor="@color/yellow"
+        app:loader_isSingleDir="false"
+        app:loader_noOfDots="2"
+        app:loader_secondShadowColor="@color/black"
+        app:loader_selectedColor="@color/Opacity"
+        app:loader_selectedRadius="10dp"
+        app:loader_showRunningShadow="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dotsLoader">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dotsLoader"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize"
+            android:layout_marginLeft="@dimen/marLift"
+            android:layout_marginTop="@dimen/marTop"
+            android:text="@string/Discover"/>
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>
