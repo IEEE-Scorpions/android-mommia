@@ -14,4 +14,18 @@
     <string name="sign_google">Sign up with Google</string>
     <string name="Discover"> Discover the \nrich history and \ncultural heritage \nof Egypt</string>
 
+
+    <string name="tv_full_name">Full Name</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_password">Password</string>
+    <string name="tv_phone_number">Phone Number</string>
+    <string name="tv_gender">Gender</string>
+    <string name="tv_national">National</string>
+    <string name="tv_date_of_birth">Date Of Birth</string>
+    <string name="tv_passport_national">Passport / National ID</string>
+    <string name="et_passport_national">Choose File</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+
+
 </resources>
