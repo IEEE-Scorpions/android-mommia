@@ -327,6 +327,7 @@
                 android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_sign_up"
             android:layout_width="130dp"
