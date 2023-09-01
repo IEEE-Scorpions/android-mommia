@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SignUP">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-13dp"
+
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#F1BA79"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="65dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="117dp"
+        android:text="@string/tv_full_name"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_full_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
+        android:text="@string/tv_email"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_below="@+id/la_full_name"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="263dp"
+        android:text="@string/tv_password"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_below="@+id/la_email"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="339dp"
+        android:text="@string/tv_phone_number"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_phone_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_below="@+id/la_password"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="415dp"
+        android:text="@string/tv_gender"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_gender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la_phone_number"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_alignEnd="@+id/la_full_name"
+        android:layout_marginTop="27dp"
+        android:textSize="18sp"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_btn_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:textOff="Male"
+            android:textOn="Female"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:thumb="@drawable/switch_thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tv_national"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="490dp"
+        android:gravity="top"
+        android:text="@string/tv_national"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_national"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_below="@+id/la_gender"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="220dp"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_national"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_date_of_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="490dp"
+        android:text="@string/tv_date_of_birth"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_date_of_birth"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la_gender"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="29dp"
+        android:layout_alignEnd="@+id/la_full_name"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_passport_national"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="565dp"
+        android:text="@string/tv_passport_national"
+        android:textColor="@color/white"
+        android:gravity="top"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_passport_national"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la_national"
+        android:layout_alignStart="@+id/la_full_name"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_passport_national"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/et_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_sign_up"
+    android:layout_width="130dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/la_passport_national"
+    android:text="@string/btn_sign_up"
+    android:background="@drawable/btn_signup"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:textAllCaps="false"
+    />
+
+
+
+</RelativeLayout>
