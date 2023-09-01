@@ -333,7 +333,7 @@
             android:layout_height="50dp"
             android:layout_below="@id/la_passport_national"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/btn_signup"
             android:text="@string/btn_sign_up"
             android:textAllCaps="false" />
