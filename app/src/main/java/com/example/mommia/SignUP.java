@@ -26,5 +26,6 @@ public class SignUP extends AppCompatActivity {
         et_date_of_birth = findViewById(R.id.et_date_of_birth);
         et_passport_national = findViewById(R.id.et_passport_national);
         btn_sign_up = findViewById(R.id.btn_sign_up);
+
     }
 }
