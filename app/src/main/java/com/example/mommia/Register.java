@@ -16,31 +16,44 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 public class Register extends AppCompatActivity {
-    Button signIn;
+    Button signIn,emailSign;
     DisplayMetrics display;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-         signIn=findViewById(R.id.btn_sign_in);
+        signIn = findViewById(R.id.btn_sign_in);
+        emailSign = findViewById(R.id.btn_sign_email);
+        emailSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register.this, SignUP.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showContinueAsDialog();
+                showSignUpDialog();
 
             }
         });
     }
-    public void showContinueAsDialog(){
-                final Dialog dialog = new Dialog(Register.this);
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                dialog.setCancelable(false);
-                dialog.setContentView(R.layout.sign_in);
-                display=getResources().getDisplayMetrics();
-                dialog.getWindow().setLayout(display.widthPixels,(10*display.heightPixels)/10);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-                dialog.show();
+
+    public void showSignUpDialog() {
+        final Dialog dialog = new Dialog(Register.this);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.sign_in);
+        display = getResources().getDisplayMetrics();
+        dialog.getWindow().setLayout(display.widthPixels, (10 * display.heightPixels) / 10);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+
 
     }
 

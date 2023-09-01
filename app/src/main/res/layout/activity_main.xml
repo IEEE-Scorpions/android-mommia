@@ -42,8 +42,8 @@
         app:loader_expandOnSelect="false"
         app:loader_firstShadowColor="@color/yellow"
         app:loader_isSingleDir="false"
-        app:loader_noOfDots="2"
-        app:loader_secondShadowColor="@color/black"
+        app:loader_noOfDots="3"
+        app:loader_secondShadowColor="@color/yellow"
         app:loader_selectedColor="@color/Opacity"
         app:loader_selectedRadius="10dp"
         app:loader_showRunningShadow="true" />
