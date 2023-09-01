@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:layout_marginBottom="-8dp"
     tools:context=".Register">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0A7A7"
+        android:alpha="0.4"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:id="@+id/rectangles"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="@dimen/txtSize"
+        android:textColor="@color/yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marTop"
+        />
+
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_above="@+id/sign"
+    android:layout_marginTop="100dp"
+    android:layout_below="@+id/rectangles">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mar"
+        android:background="@drawable/btn_custom_register"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:orientation="horizontal"
+            android:text="@string/sign_email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize20" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B0A7A7"
+        android:text="or use social media" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mar"
+        android:background="@drawable/btn_custom_register"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_google"
+            android:drawablePadding="8dp"
+            android:orientation="horizontal"
+            android:text="@string/sign_google"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize20" />
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txtSize20"
+            android:textColor="#B0A7A7"
+            android:text="@string/sign"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/txtSize20"
+            android:textColor="@color/white"
+            android:text="@string/sign_in"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

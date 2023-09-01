@@ -3,6 +3,15 @@
     <string name="continue_As">Continue As!</string>
     <string name="nameTo">Tourist</string>
     <string name="nameTG">Tour guide</string>
+    <string name="register">Register</string>
+    <string name="sign_email">Sign up with email</string>
+    <string name="email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="forget">Forget your password!</string>
+    <string name="pass">Password</string>
+    <string name="sign">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_google">Sign up with Google</string>
     <string name="Discover"> Discover the \nrich history and \ncultural heritage \nof Egypt</string>
 
 </resources>
