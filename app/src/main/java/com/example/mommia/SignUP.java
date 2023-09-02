@@ -20,8 +20,8 @@ public class SignUP extends AppCompatActivity {
         et_full_name = findViewById(R.id.et_full_name);
         et_email = findViewById(R.id.et_email);
         et_password = findViewById(R.id.et_password);
-        et_phone_number = findViewById(R.id.et_phone_number);
-        sw_gender = findViewById(R.id.sw_gender);
+        et_phone_number = findViewById(R.id.et_phone);
+        sw_gender = findViewById(R.id.sw_btn_gender);
         et_national = findViewById(R.id.et_national);
         et_date_of_birth = findViewById(R.id.et_date_of_birth);
         et_passport_national = findViewById(R.id.et_passport_national);
