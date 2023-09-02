@@ -9,6 +9,7 @@
     <string name="email">البريد الالكتروني</string>
     <string name="log_in">تسجيل الدخول</string>
     <string name="forget">"نسيت كلمة المرور الخاصة بك!"</string>
+    <string name="sign_up">تسجيل</string>
     <string name="pass">كلمة المرور</string>
     <string name="sign">"هل لديك حساب بالفعل؟"</string>
     <string name="sign_in">تسجيل الدخول</string>
@@ -17,9 +18,7 @@
 
 
     <string name="tv_full_name">الاسم بالكامل</string>
-    <string name="tv_email">البريد الاكتروني</string>
-    <string name="tv_password">كلمة المرور</string>
-    <string name="tv_phone_number">رقم الهاتف</string>
+    <string name="phone">رقم الهاتف</string>
     <string name="tv_gender">الجنس</string>
     <string name="sw_gender1">ذكر</string>
     <string name="sw_gender2">أنثي</string>
