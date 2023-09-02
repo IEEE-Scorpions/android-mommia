@@ -6,7 +6,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/dialog_custom">
     <TextView
         android:id="@+id/txt"
@@ -37,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/et_custom"
+            android:textColor="@color/white"
             android:layout_marginLeft="@dimen/marLift"
             android:layout_marginRight="@dimen/marLift"
             />
@@ -62,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/et_custom"
+            android:textColor="@color/white"
             android:layout_marginLeft="@dimen/marLift"
             android:layout_marginRight="@dimen/marLift"
             />

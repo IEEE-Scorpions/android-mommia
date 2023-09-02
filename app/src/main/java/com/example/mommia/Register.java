@@ -9,15 +9,17 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 public class Register extends AppCompatActivity {
     Button signIn,emailSign;
-    DisplayMetrics display;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,7 +33,6 @@ public class Register extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Register.this, SignUP.class);
                 startActivity(intent);
-                finish();
             }
         });
         signIn.setOnClickListener(new View.OnClickListener() {
@@ -45,14 +46,15 @@ public class Register extends AppCompatActivity {
 
     public void showSignUpDialog() {
         final Dialog dialog = new Dialog(Register.this);
-        dialog.setCanceledOnTouchOutside(false);
+
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setCancelable(false);
         dialog.setContentView(R.layout.sign_in);
-        display = getResources().getDisplayMetrics();
-        dialog.getWindow().setLayout(display.widthPixels, (10 * display.heightPixels) / 10);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
+        dialog.setCanceledOnTouchOutside(true);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations =R.style.DialoAnimation;
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
 
 
     }
