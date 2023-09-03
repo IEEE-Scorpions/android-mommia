@@ -32,5 +32,18 @@
 
 
 
+    <string name="tv_complete">أكمل ملفك الشخصي</string>
+    <string name="tv_name">الاسم</string>
+    <string name="tv_add_photo">أضف صورة للملف الشخصي</string>
+    <string name="tv_college">أدخل الجامعة الخاصة بك</string>
+    <string name="tv_cost">متوسط التكلفة</string>
+    <string name="tv_languages">اللغات</string>
+    <string name="tv_company">إذا كنت تعمل في شركة، أدخل اسمها</string>
+    <string name="tv_certificate">أضف شهادة التخرج الخاصة بك</string>
+    <string name="tv_experience">أكتب عن خبراتك</string>
+    <string name="btn_done">تم</string>
+
+
+
 
 </resources>
