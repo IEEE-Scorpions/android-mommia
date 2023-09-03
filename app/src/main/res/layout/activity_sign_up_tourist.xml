@@ -102,6 +102,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/et_custom"
+            android:inputType="textPassword"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
