@@ -12,6 +12,8 @@
     <string name="sign_up">تسجيل</string>
     <string name="pass">كلمة المرور</string>
     <string name="sign">"هل لديك حساب بالفعل؟"</string>
+    <string name="recommended">الأماكن الموصى بها</string>
+
     <string name="sign_in">تسجيل الدخول</string>
     <string name="sign_google">سجّل باستخدام جوجل</string>
     <string name="Discover"> اكتشف \n التاريخ الغني \n والتراث الثقافي \n       لمصر</string>

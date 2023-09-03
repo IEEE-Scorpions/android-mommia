@@ -11,6 +11,7 @@
     <string name="forget">Forget your password!</string>
     <string name="pass">Password</string>
     <string name="phone">Phone Number</string>
+    <string name="recommended">Recommended places</string>
     <string name="sign">Already have an account?</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_google">Sign up with Google</string>
@@ -39,7 +40,6 @@
     <string name="tv_certificate">Add your graduation certificate</string>
     <string name="tv_experience">About your experience</string>
     <string name="btn_done">Done</string>
-
 
 
 
