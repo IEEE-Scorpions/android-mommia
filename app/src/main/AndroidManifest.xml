@@ -13,7 +13,11 @@
         android:theme="@style/Theme.Mommia"
         tools:targetApi="31">
         <activity
+                  complete-profile
             android:name=".Complete_profile"
+=======
+            android:name=".SignUp_Tourist"
+
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
