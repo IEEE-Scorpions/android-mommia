@@ -80,7 +80,6 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/et_custom"
             android:inputType="textEmailAddress"
-
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -103,8 +102,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/et_custom"
-            android:inputType="numberPassword"
-
+            android:inputType="textPassword"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -203,32 +201,8 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txt_date_of_birth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
- 
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="12dp"
-                    android:gravity="top"
-                    android:text="@string/tv_date_of_birth"
-                    android:textColor="@color/white"
-                    android:textSize="19sp" />
 
-                <EditText
-                    android:id="@+id/et_date_of_birth"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/et_custom"
-                    android:inputType="date"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
 
-                    android:layout_weight="1"
-                    android:orientation="vertical">
                     <TextView
                         android:id="@+id/tv_date_of_birth"
                         android:layout_width="wrap_content"
@@ -244,6 +218,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/et_custom"
+                        android:inputType="date"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="12dp"
                         android:textColor="@color/white"
@@ -252,7 +227,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_passport_national"
@@ -291,5 +265,5 @@
 
     </LinearLayout>
 
+    </ScrollView>
 
-</ScrollView>
