@@ -28,5 +28,22 @@
     <string name="btn_sign_up">Sign Up</string>
 
 
+    <string name="tv_complete">Complete your profile</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_add_photo">Add profile photo</string>
+    <string name="tv_college">Enter your college</string>
+    <string name="tv_cost">Cost average</string>
+    <string name="tv_languages">Languages</string>
+    <string name="tv_company">If you work in a company , enter the name</string>
+    <string name="tv_certificate">Add your graduation certificate</string>
+    <string name="tv_experience">About your experience</string>
+    <string name="btn_done">Done</string>
+
+
+
+
+
+
+
 
 </resources>

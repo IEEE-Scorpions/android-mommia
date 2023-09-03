@@ -17,6 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/rectangles"
                 android:layout_width="wrap_content"
@@ -29,9 +30,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
                 android:text="@string/sign_up"
                 android:textColor="@color/yellow"
-                android:layout_marginTop="60dp"
                 android:textSize="@dimen/txtSize" />
         </RelativeLayout>
 
@@ -49,33 +50,37 @@
             android:textSize="19sp" />
 
         <EditText
-                android:id="@+id/et_full_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/et_custom"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="12dp"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_custom"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="top"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:gravity="top"
             android:text="@string/email"
             android:textColor="@color/white"
             android:textSize="19sp" />
+
         <EditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/et_custom"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:background="@drawable/et_custom"
+            android:inputType="textEmailAddress"
+
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -84,19 +89,22 @@
             android:id="@+id/tv_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="top"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:gravity="top"
             android:text="@string/pass"
             android:textColor="@color/white"
             android:textSize="19sp" />
+
         <EditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/et_custom"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:background="@drawable/et_custom"
+            android:inputType="numberPassword"
+
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -105,19 +113,21 @@
             android:id="@+id/tv_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="top"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:gravity="top"
             android:text="@string/phone"
             android:textColor="@color/white"
             android:textSize="19sp" />
+
         <EditText
             android:id="@+id/et_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/et_custom"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:background="@drawable/et_custom"
+            android:inputType="number"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -140,75 +150,83 @@
             android:id="@+id/sw_btn_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOff="Male"
-            android:textOn="Female"
             android:layout_gravity="center"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:textOff="Male"
+            android:textOn="Female"
+            android:textSize="24sp"
+            android:textStyle="bold"
             android:thumb="@drawable/switch_thumb"
             app:showText="true"
             app:track="@drawable/track" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:weightSum="2"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_national"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/tv_national"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="top"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/tv_national"
-                        android:textColor="@color/white"
-                        android:textSize="19sp" />
-                    <EditText
-                        android:id="@+id/et_national"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/et_custom"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="12dp"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/txt_date_of_birth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="top"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/tv_date_of_birth"
-                        android:textColor="@color/white"
-                        android:textSize="19sp" />
-                    <EditText
-                        android:id="@+id/et_date_of_birth"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/et_custom"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="12dp"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="top"
+                    android:text="@string/tv_national"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/et_national"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/et_custom"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_date_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="top"
+                    android:text="@string/tv_date_of_birth"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/et_date_of_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/et_custom"
+                    android:inputType="date"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_passport_national"
@@ -227,9 +245,9 @@
             android:id="@+id/et_passport_national"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/et_custom"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
+            android:background="@drawable/et_custom"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -239,9 +257,9 @@
             android:id="@+id/btn_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="12dp"
             android:background="@drawable/btn_custom_yellow"
-            android:layout_gravity="center"
             android:text="@string/btn_sign_up"
             android:textAllCaps="false" />
 
