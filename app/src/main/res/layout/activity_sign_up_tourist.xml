@@ -249,13 +249,13 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="12dp"
             android:background="@drawable/btn_custom_yellow"
-            android:text="@string/btn_next"
+            android:text="@string/btn_done"
             android:textAllCaps="false" />
 
     </LinearLayout>
