@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/mar"
         android:background="@drawable/btn_custom_register"
+        android:alpha=".8"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -72,6 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/mar"
+        android:alpha=".8"
         android:background="@drawable/btn_custom_register"
         android:gravity="center">
 
