@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class SignUP extends AppCompatActivity {
+public class SignUPTourist extends AppCompatActivity {
     EditText et_full_name, et_email, et_password, et_phone_number, et_national, et_date_of_birth, et_passport_national;
     SwitchCompat sw_gender;
     Button btn_sign_up;
@@ -15,7 +15,7 @@ public class SignUP extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_sign_up_tourist);
 
         et_full_name = findViewById(R.id.et_full_name);
         et_email = findViewById(R.id.et_email);

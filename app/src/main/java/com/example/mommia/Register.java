@@ -7,14 +7,10 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.DisplayMetrics;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 public class Register extends AppCompatActivity {
@@ -31,7 +27,7 @@ public class Register extends AppCompatActivity {
         emailSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Register.this, SignUP.class);
+                Intent intent = new Intent(Register.this, SignUPTourist.class);
                 startActivity(intent);
             }
         });

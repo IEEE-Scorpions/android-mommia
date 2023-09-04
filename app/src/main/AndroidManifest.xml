@@ -20,7 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SignUp_Tourist"
+            android:name=".SignUpTourGuide"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -30,7 +30,7 @@
 
 
         <activity
-            android:name=".SignUP"
+            android:name=".SignUPTourist"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
