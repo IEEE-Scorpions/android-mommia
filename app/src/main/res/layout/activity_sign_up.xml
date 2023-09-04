@@ -38,7 +38,7 @@
 
 
         <TextView
-            android:id="@+id/to_tv_full_name"
+            android:id="@+id/tv_full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -51,7 +51,7 @@
             android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/to_et_full_name"
+            android:id="@+id/et_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -62,7 +62,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/to_tv_email"
+            android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -73,7 +73,7 @@
             android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/to_et_email"
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -84,7 +84,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/to_tv_password"
+            android:id="@+id/tv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -95,7 +95,7 @@
             android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/to_et_password"
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -107,7 +107,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/to_tv_phone"
+            android:id="@+id/tv_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -118,7 +118,7 @@
             android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/to_et_phone"
+            android:id="@+id/et_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -130,7 +130,7 @@
 
 
         <TextView
-            android:id="@+id/to_tv_gender"
+            android:id="@+id/tv_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -143,7 +143,7 @@
             android:textSize="19sp" />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/to_sw_btn_gender"
+            android:id="@+id/sw_btn_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -170,7 +170,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/to_tv_national"
+                    android:id="@+id/tv_national"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -181,7 +181,7 @@
                     android:textSize="19sp" />
 
                 <EditText
-                    android:id="@+id/to_et_national"
+                    android:id="@+id/et_national"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="8dp"
@@ -199,7 +199,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/to_tv_date_of_birth"
+                    android:id="@+id/tv_date_of_birth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -210,7 +210,7 @@
                     android:textSize="19sp" />
 
                 <EditText
-                    android:id="@+id/to_et_date_of_birth"
+                    android:id="@+id/et_date_of_birth"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="8dp"
@@ -223,7 +223,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/to_tv_passport_national"
+            android:id="@+id/tv_passport_national"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -236,7 +236,7 @@
             android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/to_et_passport_national"
+            android:id="@+id/et_passport_national"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -248,7 +248,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
